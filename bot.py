@@ -1,19 +1,15 @@
 import pywhatkit as kit
 import time
-import time
+total_messages = range(4)
+phone = "phone_number"
+group_id = "group_id"
+image_path = "image_local_path"
 
-
-# To schedule messages
-# kit.sendwhatmsg('+50688138143',"Bot message")
-
-
-# print('Starting to send the message...')
-# # To send instant messages
 try:
-    # kit.sendwhatmsg_instantly('+50687133953',"Guapa",9,True,1)
-    kit.sendwhats_image('+50687133953',"/Users/ianguendel/Documents/GitHub/whatsapp-bot/gif1.gif","Los acordes... :P",10,True,2)
-    print('message send!')
-
+    for msg in total_messages:
+        kit.sendwhats_image(group_id,image_path,"Ya esta el video!",10,True,1)
+        print(f'Message {str(msg)} of {str(5)}')
+        time.sleep(2)
 except Exception as ex:
     print(ex)
 
