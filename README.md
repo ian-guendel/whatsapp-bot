@@ -1,4 +1,4 @@
-# whatsapp-bot
+# Whatsapp Spam Bot
 
 Test spam bot to send messages and images
 
